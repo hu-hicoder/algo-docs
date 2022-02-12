@@ -1,0 +1,15 @@
+{
+  "name": "algo-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "initialize": "cd maido && yarn install && cd cli && yarn install",
+    "dev": "cd maido && DOCUMENT_ROOT=../content yarn dev",
+    "export": "cd maido && DOCUMENT_ROOT=../content yarn build && yarn export",
+    "sync": "cd maido/cli && DOCUMENT_ROOT=../../content yarn cli-sync",
+    "article": "cd maido/cli && DOCUMENT_ROOT=../../content yarn cli-new"
+  },
+  "license": "MIT",
+  "author": "HiCoder"
+}
